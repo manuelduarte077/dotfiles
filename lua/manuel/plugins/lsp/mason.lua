@@ -30,7 +30,8 @@ mason_lspconfig.setup({
     "emmet_ls",
     "rust_analyzer",
     "graphql",
-    "kotlin_language_server"
+    "kotlin_language_server",
+    "clangd",
   },
   -- auto-install configured servers (with lspconfig)
   automatic_installation = true, -- not the same as ensure_installed

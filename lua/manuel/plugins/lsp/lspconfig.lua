@@ -16,6 +16,12 @@ if not typescript_setup then
   return
 end
 
+-- import javascript plugin safely
+local javascript_setup, javascript = pcall(require, "javascript")
+if not javascript_setup then
+  return
+end
+
 local keymap = vim.keymap -- for conciseness
 
 -- enable keybinds only for when lsp server available
@@ -70,6 +76,14 @@ typescript.setup({
   },
 })
 
+--- configure javascript server with plugin
+javascript.setup({
+  server = {
+    capabilities = capabilities,
+    on_attach = on_attach,
+  },
+})
+
 -- configure css server
 lspconfig["cssls"].setup({
   capabilities = capabilities,
@@ -86,7 +100,7 @@ lspconfig["tailwindcss"].setup({
 lspconfig["emmet_ls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
-  filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+  filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
 })
 
 -- configure lua server (with special settings)
