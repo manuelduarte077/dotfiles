@@ -28,7 +28,6 @@ return {
           "javascript",
           "typescript",
           "tsx",
-          "jsx",
           "yaml",
           "html",
           "css",
@@ -58,7 +57,14 @@ return {
       })
 
       -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
-      require("ts_context_commentstring").setup({})
+      require("ts_context_commentstring").setup({
+        enable = true,
+        tsx = "x",
+        javascript = true,
+        javascriptreact = true,
+        typescript = true,
+        typescriptreact = true,
+      })
     end,
   },
 }
