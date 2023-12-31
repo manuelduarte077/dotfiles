@@ -31,12 +31,16 @@ return {
         "html",
         "cssls",
         "tailwindcss",
-        "svelte",
         "lua_ls",
         "graphql",
         "emmet_ls",
-        "prismals",
         "pyright",
+        "rust_analyzer",
+        "clangd",
+        "gradle_ls",
+        "kotlin_language_server",
+        "astro",
+
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
