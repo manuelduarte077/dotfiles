@@ -20,7 +20,7 @@ return {
       local fg_dark = "#B4D0E9"
       local fg_gutter = "#627E97"
       local border = "#547998"
-  
+
       require("tokyonight").setup({
         style = "night",
         on_colors = function(colors)

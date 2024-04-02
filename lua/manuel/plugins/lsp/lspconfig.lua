@@ -70,8 +70,6 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
-
-
     -- configure dart server
     lspconfig["dartls"].setup({
       capabilities = capabilities,
@@ -138,7 +136,6 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
     })
-
 
     -- configure graphql language server
     lspconfig["graphql"].setup({
