@@ -15,6 +15,24 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 -- delete single character without copying into register
 -- keymap.set("n", "x", '"_x')
 
+-- Toggle Terminals
+keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<CR>", { desc = "Toggle terminal" })
+
+---------------------
+-- Flutter Keymaps -------------------
+
+-- Flutter commands
+keymap.set("n", "<leader>fr", "<cmd>FlutterRun<CR>", { desc = "Flutter run" })
+keymap.set("n", "<leader>fd", "<cmd>FlutterDevices<CR>", { desc = "Flutter devices" })
+keymap.set("n", "<leader>fh", "<cmd>FlutterHotReload<CR>", { desc = "Flutter hot reload" })
+keymap.set("n", "<leader>fs", "<cmd>FlutterHotRestart<CR>", { desc = "Flutter hot restart" })
+keymap.set("n", "<leader>fc", "<cmd>FlutterClean<CR>", { desc = "Flutter clean" })
+keymap.set("n", "<leader>fp", "<cmd>FlutterPubGet<CR>", { desc = "Flutter packages get" })
+
+-- Dart commands
+keymap.set("n", "<leader>dc", "<cmd>DartCompile<CR>", { desc = "Dart compile" })
+keymap.set("n", "<leader>dr", "<cmd>DartRun<CR>", { desc = "Dart run" })
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
