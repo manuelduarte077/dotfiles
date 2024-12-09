@@ -1,2 +1,1 @@
-require("manuel.core")
-require("manuel.lazy")
+require("manuelduarte077")
