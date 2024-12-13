@@ -1,8 +1,8 @@
 return {
   {
-    'mrcjkb/rustaceanvim',
-    version = '^3', -- Recommended
-    ft = { 'rust' },
+    "mrcjkb/rustaceanvim",
+    version = "^3", -- Recommended
+    ft = { "rust" },
   },
   -- crates
   {
@@ -12,13 +12,14 @@ return {
     ft = { "rust", "toml" },
     event = { "BufRead", "BufReadPre", "BufNewFile" },
     dependencies = { "nvim-lua/plenary.nvim" },
-    
+
     config = function()
-      require("crates").setup {
+      require("crates").setup({
         popup = {
           border = "rounded",
         },
-      }
+      })
     end,
   },
 }
+
