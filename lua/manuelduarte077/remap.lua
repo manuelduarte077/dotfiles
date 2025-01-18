@@ -36,6 +36,9 @@ keymap.set("n", "n", "nzzzv", { desc = "Next search result, center, and unfold" 
 keymap.set("n", "N", "Nzzzv", { desc = "Previous search result, center, and unfold" })
 keymap.set("n", "<leader>zig", "<cmd>LspRestart<cr>", { desc = "Restart LSP server" })
 
+-- Toggleterm keymaps
+keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<CR>", { desc = "Toggle terminal" })
+
 -- greatest remap ever
 keymap.set("x", "<leader>p", [["_dP]], { desc = "Replace selection without overwriting clipboard" })
 
