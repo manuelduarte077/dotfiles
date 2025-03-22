@@ -2,7 +2,7 @@ vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
 
-vim.opt.shell = "zsh"
+vim.opt.shell = "fish"
 
 opt.relativenumber = true
 opt.nu = true
